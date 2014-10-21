@@ -14,7 +14,9 @@ repositry is <a href="https://github.com/SWC-OSG-Workshop/general.git"> <em> gen
 and necessary tools to set up new workshop website. Using 
 <a href="https://github.com/SWC-OSG-Workshop/general.git"><em>general</em></a> 
 repo as the template, we will generate workshop specific 
-repositories. The generated repository needs to have the course materials 
+repositories. 
+
+The generated repository needs to have the course materials 
 and the front page of the website for a workshop.   
 </p>
 </br> 
@@ -22,14 +24,17 @@ and the front page of the website for a workshop.
 <h2>New Repo for a New Workshop</h2>
 <p>
 As soon as the workshop date is finalized, create a repo by the name 
-"YYYY-MM-DD", where YYYY is the year, MM is the month and DD is the date of the workshop.  In your local Desktop or Laptop,  type  the following
+"YYYY-MM-DD", where YYYY is the year, MM is the month and DD is the 
+date of the workshop. The generated repository needs to have the 
+course materials and web content for a workshop. We have all the materials 
+under the general repo. So we clone the general repo first. In your local 
+Desktop or Laptop,  type  the following
 <ul> 
-
 <li> git clone https://github.com/SWC-OSG-Workshop/YYYY-MM-DD.git
 <li> cd YYYY-MM-DD </li> 
 <li> git checkout -b gh-pages </li> 
 <li> git remote add general https://github.com/SWC-OSG-Workshop/general.git </li> 
-<li> git pull origin gh-pages </li> 
+<li> git pull general gh-pages </li> 
 <li> git remote remove general </li> 
 </ul> 
 
